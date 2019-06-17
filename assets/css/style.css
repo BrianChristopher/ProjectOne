@@ -1,5 +1,22 @@
 body {
     background: rgb(216, 12, 12);
     text-align: center;
+    color: white;
     
 }
+
+.container {
+    position: relative;
+    text-align: center;
+
+
+}
+
+.boredText {
+    position: absolute;
+    left: 39%; 
+    top: 33.5%; 
+    font-size: 70px;
+    color: white;
+}
+
