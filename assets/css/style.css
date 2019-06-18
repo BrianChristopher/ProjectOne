@@ -1,7 +1,7 @@
 body {
-    background: rgb(216, 12, 12);
+    background: url(../images/memphis-mini.png);
     text-align: center;
-    color: white;
+    color: #000;
     
 }
 
@@ -19,4 +19,8 @@ body {
     font-size: 70px;
     color: white;
 }
+
+h1:hover {
+    background-color: #fff;
+  }
 
