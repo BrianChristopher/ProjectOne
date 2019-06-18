@@ -19,13 +19,11 @@ body {
     font-size: 70px;
     color: white;
 }
-<<<<<<< HEAD
 
 h1:hover {
     background-color: #fff;
   }
 
-=======
 input[type=text] {
     margin-top:5px;
     margin-bottom:20px;
@@ -50,4 +48,7 @@ input[type=text] {
     background:#555;
     color:#fff
     }
->>>>>>> master
+
+    .inputText {
+        color: white;
+    }
