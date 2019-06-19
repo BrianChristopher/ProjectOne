@@ -13,6 +13,13 @@ $(document).ready(function() {
     //remember to keep varibale zipcode  
     var zipcode = $("#zipcode").val();
     console.log(zipcode);
+
+    $("body").empty()
+    container = $("<div class='container'>")
+    container.append("<ul class='collapsible popout'>")
+    $("body").append(container)
+
+    ajx(zipcode)
    
     });
     });

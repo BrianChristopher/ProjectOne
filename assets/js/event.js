@@ -1,6 +1,5 @@
-function ajx() {
-    var location = "32817"
-    var queryURL = "https://cors-anywhere.herokuapp.com/http://api.eventful.com/json/events/search?...&location=" + location + "&app_key=DnChmPW9wRV8NBcd"
+function ajx(zipcode) {
+    var queryURL = "https://cors-anywhere.herokuapp.com/http://api.eventful.com/json/events/search?...&location=" + zipcode + "&app_key=DnChmPW9wRV8NBcd"
     console.log(queryURL)
     $.ajax({
         url: queryURL,
@@ -47,4 +46,3 @@ function ajx() {
     }
 }
 
-ajx()
