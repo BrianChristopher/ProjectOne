@@ -15,15 +15,19 @@ $(document).ready(function() {
     console.log(zipcode);
 
     $("body").empty()
-    div = $("<div class='weather'>")
-    container = $("<div class='container'>")
-    container.append("<ul class='collapsible popout'>")
-    $("body").append(div,container)
-
-
-    weather(zipcode)
+    //Load the load page
+    buildLoading();
+    //Timeout 
+    setTimeout(function(){
+        $("body").empty()
+        div = $("<div class='weather'>")
+        container = $("<div class='container'>")
+        container.append("<ul class='collapsible popout'>")
+        $("body").append(div,container)
+        weather(zipcode)
+        ajx(zipcode)
+        }, 5000);
    
-    ajx(zipcode)
    
     });
     });
