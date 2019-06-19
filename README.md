@@ -1,4 +1,4 @@
-# ProjectOne#
+# ProjectOne
 This is our project one, a webapp titled "BORED."
 
 ## What the project does
