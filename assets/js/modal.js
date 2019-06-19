@@ -15,10 +15,14 @@ $(document).ready(function() {
     console.log(zipcode);
 
     $("body").empty()
+    div = $("<div class='weather'>")
     container = $("<div class='container'>")
     container.append("<ul class='collapsible popout'>")
-    $("body").append(container)
+    $("body").append(div,container)
 
+
+    weather(zipcode)
+   
     ajx(zipcode)
    
     });
