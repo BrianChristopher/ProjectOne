@@ -4,6 +4,11 @@ body {
     color: #000;
 }
 
+.collapsible {
+    text-align: left;
+    
+}
+
 .container {
     position: relative;
     text-align: center;
