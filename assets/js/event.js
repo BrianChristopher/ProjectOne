@@ -1,15 +1,18 @@
-function ajx() {
-    var location = "32817"
-    var queryURL = "https://cors-anywhere.herokuapp.com/http://api.eventful.com/json/events/search?...&location=" + location + "&app_key=DnChmPW9wRV8NBcd"
+function ajx(zipcode) {
+    function ajx(){
+    var queryURL = `https://cors-anywhere.herokuapp.com/http://api.eventful.com/json/events/search?...&location=${zipcode}&app_key=DnChmPW9wRV8NBcd`
     console.log(queryURL)
     $.ajax({
-        url: queryURL,
-        method: "GET"
-    }).then(function (response) {
+        method: 'GET',
+        url: queryURL
+    })
+    .then(function (response) {
+        console.log(response)
         let results = JSON.parse(response)
         // forwards all the information to info function
         info(results)
     })
+    }
     //function where we will go through our info object and gather the resources to load to the DOM
     function info(results) {
         var dat
@@ -46,5 +49,3 @@ function ajx() {
         }
     }
 }
-
-ajx()
