@@ -2,27 +2,29 @@ body {
     background: url(../images/memphis-mini.png);
     text-align: center;
     color: #000;
-    
 }
 
 .container {
     position: relative;
     text-align: center;
+}
 
-
+#boredButton {
+    padding-top: 8%;
 }
 
 .boredText {
     position: absolute;
-    left: 39%; 
-    top: 33.5%; 
+    left: 40%; 
+    top: 25.5%; 
     font-size: 70px;
     color: white;
 }
 
-h1:hover {
-    background-color: #fff;
-  }
+h1:hover, h1:active {
+    color: #000;
+}
+
 
 input[type=text] {
     margin-top:5px;
@@ -51,4 +53,10 @@ input[type=text] {
 
     .inputText {
         color: white;
+    }
+
+
+    .footer {
+        padding: 230px 0px 0px 10px;
+        text-align: left;
     }
