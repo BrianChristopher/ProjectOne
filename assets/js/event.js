@@ -1,14 +1,19 @@
 function ajx(zipcode) {
-    var queryURL = "https://cors-anywhere.herokuapp.com/http://api.eventful.com/json/events/search?...&location=" + zipcode + "&app_key=DnChmPW9wRV8NBcd"
-    console.log(queryURL)
+    var queryURL = "https://cors.io/?http://api.eventful.com/json/events/search?...&location=" + zipcode + "&app_key=DnChmPW9wRV8NBcd"
+    console.log(queryURL);
     $.ajax({
         url: queryURL,
-        method: "GET"
+        method: "GET",
+        // "Access-Control-Request-Headers": "https://crossorigin.me/"
     }).then(function (response) {
+        console.log("Ajax called")
         let results = JSON.parse(response)
+        console.log(results);
         // forwards all the information to info function
         info(results)
     })
+    
+}
     //function where we will go through our info object and gather the resources to load to the DOM
     function info(results) {
         var dat
@@ -44,5 +49,5 @@ function ajx(zipcode) {
             $(".collapsible").append(li)
         }
     }
-}
+
 
