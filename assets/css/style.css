@@ -2,6 +2,7 @@ body {
     background: url(../images/memphis-mini.png);
     text-align: center;
     color: #000;
+    
 }
 
 .collapsible {
@@ -15,7 +16,7 @@ body {
 }
 
 #boredButton {
-    padding-top: 8%;
+    padding-top: 5%;
 }
 
 .boredText {
@@ -29,6 +30,16 @@ body {
 h1:hover, h1:active {
     color: #000;
 }
+
+h2 {
+    font-family: 'Rammetto One', cursive;
+    padding-top: 30px;
+}
+
+/* .dropdown-menu {
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-size: 25px;
+} */
 
 
 input[type=text] {
@@ -62,6 +73,6 @@ input[type=text] {
 
 
     .footer {
-        padding: 230px 0px 0px 10px;
+        padding: 90px 0px 0px 10px;
         text-align: left;
     }
