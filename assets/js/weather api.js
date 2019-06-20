@@ -17,12 +17,12 @@ function weather(zipcode){
     })
         // We store all of the retrieved data inside of an object called "response"
         .then(function(response) {
-            // console.log(response)
+           
             cit = response.name
             desc = response.weather[0].description
-            // console.log(response.main.temp)
+           
             temp = Math.round(response.main.temp)
-            // console.log(response.main.humidity)
+           
             humidity = response.main.humidity
             $(".weather").append("City: ", cit ,"<br>","Temp: ",temp,"<br>","Humidity: ", humidity,"<br>","Descritption: ", desc,"<br>")
 
